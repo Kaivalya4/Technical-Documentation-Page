@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin : 0;
+    font-family: "Open Sans" ;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar-link{
+    font-size : 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: stretch;
+    overflow-y: scroll;
+    height : 200px;
+    border : 1.7px solid black;
+}
+.nav-link{
+    border-bottom : 1px solid black;
+    text-decoration: none;
+    color :black;
+    padding : 10px;
+    padding-left : 30px;
+}
+#main-doc{
+    font-family: "Open Sans";
+    width : 85%;
+    margin-left :7%;
+}
+.sec-content{
+    margin-left: 1rem;
+    font-size : 15px;
+    text-align: justify;
+    font-weight: 600;
+    font-style : initial;
+}
+h1{
+    font-size : 27px;
+    font-weight: bolder;
+}
+code{
+    background-color: #f7f7f7;
+    white-space: pre-line;
+    display: block;
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 20px;
+    min-height: 30px;
+}
+li{
+    margin : 15px;
+}
+
+@media screen and (min-width : 820px){
+    body{
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #navbar{
+        height : 100%;
+        width : 300px;
+        position :fixed;
+        z-index : 1;
+        border : 2px solid black;
+    }
+    #navbar-link{
+        overflow: unset;
+        border: none;
+    }
+    #main-doc{
+        margin-left : 320px;
+    }
+}
+
